@@ -67,6 +67,7 @@ gem 'bootstrap', '~> 4.3.1'
 gem 'font-awesome-rails'
 gem 'devise'
 gem 'kaminari'
+gem 'faker'
 
 group :production do
   gem 'pg'
