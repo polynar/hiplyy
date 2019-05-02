@@ -1,4 +1,6 @@
-# README
+# HIPLYY - An instagram clone
+
+Ruby On Rails SZTE kötelező program
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
