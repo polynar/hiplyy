@@ -30,4 +30,26 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  search:
+
+    placeholder: "#Search"
+
+  post_form:
+    upload_buttom: "Create Post"
+
+  post:
+    delete: "Delete"
+    delete_confirm: "Are you sure?"
+
+  profile:
+    followers: "Followers"
+    following: "Following"
+    edit_profile: "Edit Profile"
+    post: "Posts"
+    posts: "posts"
+
+  helpers:
+    label:
+      post:
+      user:
+        submit: "Save"

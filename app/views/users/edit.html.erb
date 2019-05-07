@@ -1,13 +1,9 @@
 <div class="user-edit-page">
   <div class="actions">
     <div class="nav flex-column nav-pills" role="tablist" aria-orientation="vertical">
-      <a class="nav-link active" data-toggle="pill" href="#v-pills-home" role="tab" aria-selected="true">Edit Profile</a>
-      <a class="nav-link" data-toggle="pill">Change Password</a>
-      <a class="nav-link" data-toggle="pill">Authorized Applications</a>
-      <a class="nav-link" data-toggle="pill">Email and SMS</a>
-      <a class="nav-link" data-toggle="pill">Manage Contacts</a>
-      <a class="nav-link" data-toggle="pill">Privacy and Security</a>
-      <%= link_to 'Log Out', destroy_user_session_path, method: :delete, class: "nav-link" %>
+      <a class="nav-link active" data-toggle="pill" href="#v-pills-home" role="tab" aria-selected="true"><%= t('profile_edit.menu.edit_profile') %></a>
+      <a class="nav-link" data-toggle="pill"><%= t('profile_edit.menu.change_password') %></a>
+      <%= link_to t('profile_edit.menu.logout'), destroy_user_session_path, method: :delete, class: "nav-link" %>
     </div>
   </div>
   <div class="details tab-content">
@@ -75,7 +71,7 @@
           <div class="col-sm-3">
           </div>
           <div class="col-sm-9">
-            <%= f.submit "Submit", class: 'btn btn-primary' %>
+            <%= f.submit t('helpers.label.user.submit'), class: 'btn btn-primary' %>
           </div>
         </div>
       <% end %>

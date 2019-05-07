@@ -69,6 +69,7 @@ gem 'devise'
 gem 'kaminari'
 gem 'faker'
 gem 'aws-sdk-s3'
+gem 'devise-i18n'
 
 group :production do
   gem 'pg'

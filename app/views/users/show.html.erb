@@ -12,13 +12,13 @@
       <div class="user-wrapper">
         <h2 class="username"><%= @user.username %></h2>
         <a class="edit-profile" href="<%= edit_user_path(@user) %>">
-          <button>Edit Profile</button>
+          <button><%= t('profile.edit_profile') %></button>
         </a>
       </div>
       <ul class="posts">
-        <li><span><%= @posts.count %></span> posts</li>
-        <li><span>195</span> followers</li>
-        <li><span>345</span> following</li>
+        <li><span><%= @posts.count %></span> <%= t('profile.post') %></li>
+        <li><span>195</span> <%= t('profile.followers') %></li>
+        <li><span>345</span> <%= t('profile.following') %></li>
       </ul>
       <h2 class="name"><%= @user.name %></h2>
       <a class="website"><%= @user.website %></a>
@@ -29,7 +29,7 @@
 <div class="user-tabs">
   <a class="tab active" href="">
     <i class="fa fa-th"></i>
-    POSTS
+    <%= t('profile.posts').upcase %>
   </a>
   <a class="tab" href="">
     <i class="fa fa-tv"></i>

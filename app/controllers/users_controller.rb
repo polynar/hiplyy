@@ -1,6 +1,11 @@
 class UsersController < ApplicationController
   def show
     @user  = User.find(params[:id])
+    if (@user.id == current_user.id)
+    {
+
+    }
+    end
     @posts = @user.posts.order(created_at: :desc)
   end
 
@@ -13,6 +18,9 @@ class UsersController < ApplicationController
     redirect_to current_user
   end
 
+  def profile
+
+  end
 
 
   private

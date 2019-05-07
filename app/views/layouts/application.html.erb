@@ -20,7 +20,7 @@
       </div>
       <div class="m-auto">
         <%= form_with url: search_path, method: :get, local: true, class: 'form-inline search-form' do |form| %>
-          <%= form.text_field :query, value: params[:query], class: 'form-control mr-sm-2', placeholder: '#search' %>
+          <%= form.text_field :query, value: params[:query], class: 'form-control mr-sm-2', placeholder: t('search.placeholder') %>
         <% end %>
       </div>
       <div class="user-section">
@@ -47,6 +47,15 @@
 
   <!--Footer-->
   <footer class="container footer">
+    <p class="text-center">
+      <% if I18n.locale == I18n.default_locale %>
+        <%= link_to "English", { :locale=>'en' } %>
+
+      <% else %>
+        <%= link_to "Magyar", { :locale=>'hu' } %>
+
+      <%end%>
+    </p>
     <p class="text-center">&copy; <%= Date.today.year %> <%= Rails.configuration.site_name %></p>
   </footer>
   </body>
