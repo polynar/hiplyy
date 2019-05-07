@@ -52,4 +52,10 @@ en:
     label:
       post:
       user:
-        submit: "Save"
+        avatar: "Profile picture"
+          name: "Name"
+          username: "Username"
+          website: "Website"
+          phone: "Phone"
+          gender: "Gender"
+          submit: "Save"
