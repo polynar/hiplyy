@@ -70,7 +70,7 @@ gem 'kaminari'
 gem 'faker'
 gem 'aws-sdk-s3'
 gem 'devise-i18n'
-
+gem 'devise-bootstrap-views', '~> 1.0'
 group :production do
   gem 'pg'
 end
