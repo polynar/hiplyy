@@ -53,9 +53,9 @@ en:
       post:
       user:
         avatar: "Profile picture"
-          name: "Name"
-          username: "Username"
-          website: "Website"
-          phone: "Phone"
-          gender: "Gender"
-          submit: "Save"
+        name: "Name"
+        username: "Username"
+        website: "Website"
+        phone: "Phone"
+        gender: "Gender"
+        submit: "Save"
