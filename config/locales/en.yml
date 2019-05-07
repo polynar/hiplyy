@@ -40,6 +40,7 @@ en:
   post:
     delete: "Delete"
     delete_confirm: "Are you sure?"
+    back: "Back"
 
   profile:
     followers: "Followers"

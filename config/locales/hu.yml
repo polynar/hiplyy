@@ -1,22 +1,28 @@
 hu:
   search:
     placeholder: "#Keresés"
+
   post_form:
     upload_button: "Feltöltés"
+
   post:
     delete: "Törlés"
     delete_confirm: "Biztosan törlöd ezt a post-ot?"
+    back: "Vissza"
+
   profile:
     followers: "követő"
     following: "követett"
     edit_profile: "Profil szerkesztése"
     post: "poszt"
     posts: "posztok"
+
   profile_edit:
     menu:
       edit_profile: "Profil szerkesztése"
       change_password: "Jelszó változtatás"
       logout: "Kijelentkezés"
+
   helpers:
     label:
       post:
