@@ -37,10 +37,20 @@
   <!--Main content-->
   <main class="container">
     <% if notice %>
-    <p class="notice"><%= notice %></p>
+    <div class="alert alert-success" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <%= notice %>
+    </div>
       <% end %>
     <% if alert %>
-    <p class="alert"><%= alert %></p>
+    <div class="alert alert-danger" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <%= alert %>
+    </div>
       <% end %>
     <%= yield %>
   </main>

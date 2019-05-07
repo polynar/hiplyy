@@ -13,10 +13,20 @@
 <!--Main content-->
 <main class="container h-full">
   <% if notice %>
-    <p class="notice"><%= notice %></p>
+    <div class="alert alert-success" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <%= notice %>
+    </div>
   <% end %>
   <% if alert %>
-    <p class="alert"><%= alert %></p>
+    <div class="alert alert-danger" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <%= alert %>
+    </div>
   <% end %>
   <div class="row justify-content-center">
     <div class="col">
@@ -28,7 +38,16 @@
 
 <!--Footer-->
 <footer class="container footer">
-    <p class="text-center">&copy; <%= Date.today.year %> <%= Rails.configuration.site_name %></p>
+  <p class="text-center">
+    <% if I18n.locale == I18n.default_locale %>
+      <%= link_to "English", { :locale=>'en' } %>
+
+    <% else %>
+      <%= link_to "Magyar", { :locale=>'hu' } %>
+
+    <%end%>
+  </p>
+  <p class="text-center">&copy; <%= Date.today.year %> <%= Rails.configuration.site_name %></p>
 </footer>
 </body>
 </html>
