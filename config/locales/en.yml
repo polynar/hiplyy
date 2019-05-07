@@ -48,6 +48,12 @@ en:
     post: "Posts"
     posts: "posts"
 
+  profile_edit:
+    menu:
+      edit_profile: "Edit profile"
+      change_password: "Change password"
+      logout: "Logout"
+
   helpers:
     label:
       post:
