@@ -35,7 +35,7 @@ en:
     placeholder: "#Search"
 
   post_form:
-    upload_buttom: "Create Post"
+    upload_button: "Create Post"
 
   post:
     delete: "Delete"
