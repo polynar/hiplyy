@@ -101,11 +101,13 @@
 
     img{
       width: 100%;
-      border-radius: 4%;
+      border-radius: 10px;
       width: 278px;
       height: 278px;
       object-fit: cover;
-      border: 1px solid #efefef;
+      -webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.15);
+      -moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.15);
+      box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.15);
     }
   }
 }
@@ -115,10 +117,12 @@
   display: flex;
   margin-top: 60px;
   min-height: 500px;
-
+  -webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.15);
+  box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.15);
   .actions{
     width: 220px;
-    border: 1px solid #dbdbdb;
+
 
     .nav-link{
       font-size: 14px;
@@ -137,7 +141,7 @@
   }
   .details{
     flex: 1;
-    border: 1px solid #dbdbdb;
+
     border-left:none;
   }
 }

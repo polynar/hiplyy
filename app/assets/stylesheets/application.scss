@@ -20,12 +20,16 @@
 @import "users";
 @import "posts";
 
+body{
+  padding-top: 60px;
+}
+
 .container{
   max-width: 1000px;
 }
 
 .navbar{
-  border-bottom: 1px solid rgba(0,0,0,.0975);
+  background-color: white;
 }
 .user-section{
   a{

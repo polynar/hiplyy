@@ -1,4 +1,7 @@
 <section class="post">
+  <%=link_to post_path(post) do %>
+    <%= image_tag(post.image, class: 'main-image') %>
+  <% end %>
   <div class="user">
     <div class="avatar">
       <% if post.user.avatar.attached? %>
@@ -9,10 +12,6 @@
     </div>
     <%= link_to post.user.username, user_path(post.user), class: 'username' %>
   </div>
-  <%=link_to post_path(post) do %>
-    <%= image_tag(post.image, class: 'main-image') %>
-  <% end %>
-
   <div class="description">
     <%= render partial: "posts/description", locals: {post: post} %>
   </div>
